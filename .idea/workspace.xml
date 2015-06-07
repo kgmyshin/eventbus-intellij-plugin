@@ -32,11 +32,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18096514">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="EventBusLineMarkerProvider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/EventBusLineMarkerProvider.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="73" selection-start-line="56" selection-start-column="73" selection-end-line="56" selection-end-column="73" />
+              <caret line="0" column="40" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/PsiUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -69,7 +79,7 @@
       <file leaf-file-name="ShowUsagesTableCellRenderer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ShowUsagesTableCellRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.11111">
+            <state vertical-scroll-proportion="11.555555">
               <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="e#0#6991#0" expanded="true" />
@@ -79,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompositeActiveComponent.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CompositeActiveComponent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/CompositeActiveComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44230768">
+            <state vertical-scroll-proportion="0.0">
               <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
               <folding>
                 <element signature="e#0#1510#0" expanded="true" />
@@ -112,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ShowUsagesAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="454" column="77" selection-start-line="454" selection-start-column="77" selection-end-line="454" selection-end-column="77" />
               <folding>
                 <element signature="e#0#53034#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -170,19 +180,19 @@
         <option value="$PROJECT_DIR$/src/EventBusProjectHandler.java" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/EventBusImplicitUsageProvider.java" />
         <option value="$PROJECT_DIR$/helloPlugin.iml" />
-        <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ShowFIlter.java" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ShowFilter.java" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/Decider.java" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/Filter.java" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ReceiverFilter.java" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/SenderFilter.java" />
-        <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/PsiUtils.java" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/EventBusLineMarkerProvider.java" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/PingEDT.java" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/CompositeActiveComponent.java" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ShowUsagesAction.java" />
         <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ShowUsagesTableCellRenderer.java" />
+        <option value="$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/PsiUtils.java" />
+        <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -197,8 +207,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="718" />
     <option name="y" value="23" />
-    <option name="width" value="1436" />
+    <option name="width" value="746" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -275,6 +286,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="eventbus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventbus-intellij-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,7 +513,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1436" height="877" extended-state="6" />
+    <frame x="718" y="23" width="746" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -502,7 +527,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.042079207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48123324" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24009901" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -925,14 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="119" selection-start-line="29" selection-start-column="119" selection-end-line="29" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/icons/icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -970,70 +987,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ShowUsagesTableCellRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.11111">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#6991#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ShowUsagesAction.java">
+    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/CompositeActiveComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
           <folding>
-            <element signature="e#0#53034#0" expanded="true" />
+            <element signature="e#0#1510#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#6303#7372#0" expanded="true" />
-            <element signature="e#7371#7372#0" expanded="true" />
-            <element signature="e#7428#7531#0" expanded="true" />
-            <element signature="e#7530#7531#0" expanded="true" />
-            <element signature="e#13407#13639#0" expanded="true" />
-            <element signature="e#13638#13639#0" expanded="true" />
-            <element signature="e#13691#13698#0" expanded="true" />
-            <element signature="e#13763#13774#0" expanded="true" />
-            <element signature="e#15418#15577#0" expanded="true" />
-            <element signature="e#15576#15577#0" expanded="true" />
-            <element signature="e#21615#21751#0" expanded="true" />
-            <element signature="e#21750#21751#0" expanded="true" />
-            <element signature="e#39961#40022#0" expanded="true" />
-            <element signature="e#47624#47625#0" expanded="true" />
-            <element signature="e#47688#47689#0" expanded="true" />
+            <element signature="e#1473#1474#0" expanded="true" />
+            <element signature="e#1507#1508#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/SenderFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="81" selection-start-line="45" selection-start-column="81" selection-end-line="45" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ReceiverFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/PsiUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,26 +1019,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/EventBusLineMarkerProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ReceiverFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="73" selection-start-line="56" selection-start-column="73" selection-end-line="56" selection-end-column="73" />
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/CompositeActiveComponent.java">
+    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/SenderFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44230768">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="81" selection-start-line="45" selection-start-column="81" selection-end-line="45" selection-end-column="81" />
           <folding>
-            <element signature="e#0#1510#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ShowUsagesAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="454" column="77" selection-start-line="454" selection-start-column="77" selection-end-line="454" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#53034#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6303#7372#0" expanded="true" />
+            <element signature="e#7371#7372#0" expanded="true" />
+            <element signature="e#7428#7531#0" expanded="true" />
+            <element signature="e#7530#7531#0" expanded="true" />
+            <element signature="e#13407#13639#0" expanded="true" />
+            <element signature="e#13638#13639#0" expanded="true" />
+            <element signature="e#13691#13698#0" expanded="true" />
+            <element signature="e#13763#13774#0" expanded="true" />
+            <element signature="e#15418#15577#0" expanded="true" />
+            <element signature="e#15576#15577#0" expanded="true" />
+            <element signature="e#21615#21751#0" expanded="true" />
+            <element signature="e#21750#21751#0" expanded="true" />
+            <element signature="e#39961#40022#0" expanded="true" />
+            <element signature="e#47624#47625#0" expanded="true" />
+            <element signature="e#47688#47689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/EventBusLineMarkerProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="40" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/ShowUsagesTableCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="11.555555">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#6991#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kgmyshin/ideaplugin/eventbus/PsiUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18096514">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

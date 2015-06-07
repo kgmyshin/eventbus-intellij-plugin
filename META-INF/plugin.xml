@@ -1,17 +1,19 @@
 <idea-plugin version="2">
-  <id>com.kgmyshin.hello</id>
-  <name>Plugin display name here</name>
+  <id>com.kgmyshin.ideaplugin.eventbus</id>
+  <name>EventBus Intellij Plugin</name>
   <version>1.0</version>
-  <vendor email="kgmyshin82@gmail.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="kgmyshin82@gmail.com" url="https://github.com/kgmyshin/eventbus-intellij-plugin">eventbus-intellij-plugin</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+    Provides actions which allow you quickly move around the event bus.
+    <ul>
+      <li><code>EventBus.post</code> to <code>onEvent</code> or <code>onEventMainThread</code></li>
+      <li><code>onEvent</code> or <code>onEventMainThread</code> to <code>EventBus.post</code></li>
+    </ul>
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      First version released.
     ]]>
   </change-notes>
 
