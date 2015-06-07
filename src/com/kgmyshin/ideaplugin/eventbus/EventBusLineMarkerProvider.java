@@ -39,7 +39,7 @@ public class EventBusLineMarkerProvider implements LineMarkerProvider {
                         PsiMethod postMethod = eventBusClass.findMethodsByName("post", false)[0];
                         PsiMethod method = (PsiMethod) psiElement;
                         PsiClass eventClass = ((PsiClassType) method.getParameterList().getParameters()[0].getTypeElement().getType()).resolve();
-                        new ShowUsagesAction(new SenderFilter(eventClass), false).startFindUsages(postMethod, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES);
+                        new ShowUsagesAction(new SenderFilter(eventClass)).startFindUsages(postMethod, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES);
                     }
                 }
             };
@@ -54,7 +54,7 @@ public class EventBusLineMarkerProvider implements LineMarkerProvider {
                         if (expressionTypes.length > 0) {
                             PsiClass eventClass = PsiUtils.getClass(expressionTypes[0]);
                             if (eventClass != null) {
-                                new ShowUsagesAction(new ReceiverFilter(), false).startFindUsages(eventClass, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES);
+                                new ShowUsagesAction(new ReceiverFilter()).startFindUsages(eventClass, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES);
                             }
                         }
                     }

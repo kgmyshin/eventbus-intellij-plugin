@@ -1,3 +1,19 @@
+/*
+ * Copyright 2000-2012 JetBrains s.r.o.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.kgmyshin.ideaplugin.eventbus;
 
 import com.intellij.CommonBundle;
@@ -53,7 +69,6 @@ import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.openapi.wm.IdeFocusManager;
 import com.intellij.psi.PsiDocumentManager;
 import com.intellij.psi.PsiElement;
-import com.intellij.psi.SmartPsiElementPointer;
 import com.intellij.psi.search.GlobalSearchScope;
 import com.intellij.psi.search.ProjectScope;
 import com.intellij.psi.search.PsiElementProcessor;
@@ -120,11 +135,7 @@ import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-/**
- * Created by kgmyshin on 2015/06/07.
- */
 public class ShowUsagesAction extends AnAction implements PopupAction{
-    private final boolean showSettingsDialogBefore;
     private static final int USAGES_PAGE_SIZE = 100;
 
     private Filter filter;
@@ -167,10 +178,9 @@ public class ShowUsagesAction extends AnAction implements PopupAction{
     @NotNull private final UsageViewSettings myUsageViewSettings;
     @Nullable private Runnable mySearchEverywhereRunnable;
 
-    public ShowUsagesAction(Filter filter, boolean showDialogBefore) {
+    public ShowUsagesAction(Filter filter) {
         this.filter = filter;
         setInjectedContext(true);
-        showSettingsDialogBefore = showDialogBefore;
 
         final UsageViewSettings usageViewSettings = UsageViewSettings.getInstance();
         myUsageViewSettings = new UsageViewSettings();
@@ -254,10 +264,6 @@ public class ShowUsagesAction extends AnAction implements PopupAction{
         FindUsagesManager findUsagesManager = ((FindManagerImpl)FindManager.getInstance(project)).getFindUsagesManager();
         FindUsagesHandler handler = findUsagesManager.getNewFindUsagesHandler(element, false);
         if (handler == null) return;
-        if (showSettingsDialogBefore) {
-            showDialogAndFindUsages(handler, popupPosition, editor, maxUsages);
-            return;
-        }
         showElementUsages(handler, editor, popupPosition, maxUsages, getDefaultOptions(handler));
     }
 
