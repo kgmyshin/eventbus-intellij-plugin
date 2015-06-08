@@ -1,3 +1,5 @@
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-eventbus--intellij--plugin-green.svg?style=flat)](https://android-arsenal.com/details/1/1948)
+
 # eventbus-intellij-plugin
 
 Plugin to navigate between events posted by [EventBus](https://github.com/greenrobot/EventBus).
