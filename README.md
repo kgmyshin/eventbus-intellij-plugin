@@ -8,9 +8,15 @@ Plugin to navigate between events posted by [EventBus](https://github.com/greenr
 
 ![](https://raw.githubusercontent.com/kgmyshin/eventbus-intellij-plugin/master/art/cap.gif)
 
-## Download
+## Install
 
-[Download](https://github.com/kgmyshin/eventbus-intellij-plugin/raw/master/eventbus-intellij-plugin.jar) the plugin jar and select "Install Plugin From Disk" in IntelliJ's plugin preferences.
+There are two ways.
+
+- Preference -> Plugins -> Browse `EventBus` -> Select `EventBus Intellij Plugin` -> push Install plugin Btn.
+
+- [Download](https://github.com/kgmyshin/eventbus-intellij-plugin/raw/master/eventbus-intellij-plugin.jar) the plugin jar and select "Install Plugin From Disk" in IntelliJ's plugin preferences.
+
+
 
 ## License 
 
