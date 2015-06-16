@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>com.kgmyshin.ideaplugin.eventbus</id>
   <name>EventBus Intellij Plugin</name>
-  <version>1.1</version>
+  <version>1.2</version>
   <vendor email="kgmyshin82@gmail.com" url="https://github.com/kgmyshin/eventbus-intellij-plugin">eventbus-intellij-plugin</vendor>
 
   <description><![CDATA[
