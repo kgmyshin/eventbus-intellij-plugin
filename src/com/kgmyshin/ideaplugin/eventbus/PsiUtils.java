@@ -7,9 +7,12 @@ import com.intellij.psi.*;
  */
 public class PsiUtils {
 
-    public static PsiClass getClass(PsiType psiType) {
+    public static PsiClass getClass(PsiType psiType, PsiElement context) {
         if (psiType instanceof PsiClassType) {
             return ((PsiClassType) psiType).resolve();
+        } else if (psiType instanceof  PsiPrimitiveType) {
+            PsiClassType wrapperType = ((PsiPrimitiveType) psiType).getBoxedType(context);
+            return wrapperType == null ? null : wrapperType.resolve();
         }
         return null;
     }
@@ -19,7 +22,8 @@ public class PsiUtils {
             PsiMethod method = (PsiMethod) psiElement;
             if (method.getName() != null
                     && (method.getName().equals("onEvent") || method.getName().equals("onEventMainThread"))
-                    && method.getParameterList().getParametersCount() == 1) {
+                    && method.getParameterList().getParametersCount() == 1
+                    && method.getParameterList().getParameters()[0].getType() instanceof PsiClassType) {
                 return true;
             }
         }
@@ -45,11 +49,7 @@ public class PsiUtils {
     }
 
     private static boolean isEventBusClass(PsiClass psiClass) {
-        if (psiClass.getName().equals("EventBus")) {
-            return true;
-        } else {
-            return false;
-        }
+        return psiClass.getName().equals("EventBus");
     }
 
     private static boolean isSuperClassEventBus(PsiClass psiClass) {
