@@ -21,7 +21,10 @@ public class PsiUtils {
         if (psiElement instanceof PsiMethod) {
             PsiMethod method = (PsiMethod) psiElement;
             if (method.getName() != null
-                    && (method.getName().equals("onEvent") || method.getName().equals("onEventMainThread"))
+                    && (method.getName().equals("onEvent")
+                        || method.getName().equals("onEventMainThread")
+                        || method.getName().equals("onEventBackgroundThread")
+                        || method.getName().equals("onEventAsync"))
                     && method.getParameterList().getParametersCount() == 1
                     && method.getParameterList().getParameters()[0].getType() instanceof PsiClassType) {
                 return true;
