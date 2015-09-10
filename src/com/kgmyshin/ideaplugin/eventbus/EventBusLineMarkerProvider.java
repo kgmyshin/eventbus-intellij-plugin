@@ -54,7 +54,7 @@ public class EventBusLineMarkerProvider implements LineMarkerProvider {
                         if (expressionTypes.length > 0) {
                             PsiClass eventClass = PsiUtils.getClass(expressionTypes[0], psiElement);
                             if (eventClass != null) {
-                                new ShowUsagesAction(new ReceiverFilter()).startFindUsages(eventClass, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES);
+                                new ShowUsagesAction(new ReceiverFilter(eventClass)).startFindUsages(eventClass, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES);
                             }
                         }
                     }

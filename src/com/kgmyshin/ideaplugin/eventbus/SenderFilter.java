@@ -23,8 +23,7 @@ public class SenderFilter implements Filter {
                 PsiMethodCallExpression callExpression = (PsiMethodCallExpression) element;
                 PsiType[] types = callExpression.getArgumentList().getExpressionTypes();
                 for (PsiType type : types) {
-                    if (PsiUtils.getClass(type, element).getName().equals(eventClass.getName())) {
-                        // pattern : EventBus.getDefault().post(new Event());
+                    if (isInstance(PsiUtils.getClass(type, element))) {
                         return true;
                     }
                 }
@@ -40,7 +39,7 @@ public class SenderFilter implements Filter {
                                     if (variable instanceof PsiLocalVariable) {
                                         PsiLocalVariable localVariable = (PsiLocalVariable) variable;
                                         PsiClass psiClass = PsiUtils.getClass(localVariable.getTypeElement().getType(), element);
-                                        if (psiClass.getName().equals(eventClass.getName())) {
+                                        if (isInstance(psiClass)) {
                                             // pattern :
                                             //   Event event = new Event();
                                             //   EventBus.getDefault().post(event);
@@ -54,7 +53,17 @@ public class SenderFilter implements Filter {
                 }
             }
         }
-
         return false;
     }
+
+    private boolean isInstance(PsiClass psiClass) {
+        String eventClassName = eventClass.getName();
+        for (PsiClass cls : psiClass.getSupers()) {
+            if (cls.getName().equals(eventClassName)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
